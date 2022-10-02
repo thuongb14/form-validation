@@ -1,44 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Form Validate</title>
     <script defer src="./app.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <div class="form-container">
-        <h1>FormGet</h1>
-        <div class="form-content">
-            <h2>INFORMATION FORM</h2>
-            <p>This is my form. Please fill it out, it's awesome!</p>
-            <form novalidate>
-                <label for="email">
-                    <input type="email" id="email" required placeholder="Your Email Here">
-                    <div class="error hidden"></div>
-                </label>
-                <label for="postcode">
-                    <input type="text" id="postcode" required placeholder="Postcode" pattern="([1-9]|[1-9][0-9]|[1-9][0-9][0-9]|[1-9][0-9][0-9][0-9])" minlength='4' maxlength="4">
-                    <div class="error hidden"></div>
-                </label>
-                <label for="country">
-                    <input type="text" id="country" required placeholder="Country" pattern="^[a-zA-Z]+$">
-                    <div class="error hidden"></div>
-                </label>
-                <label for="password">
-                    <input type="password" id="password" required placeholder="Your Password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$">
-                    <div class="error hidden"></div>
-                </label>
-                <label for="password-confirmation">
-                    <input type="password" id="password-confirmation" required placeholder="Confirm Password">
-                    <div class="error hidden"></div>
-                </label>
-                <button type="submit">Submit</button>
-                <div class="submit-error hidden"></div>
-            </form>
-        </div>
+      <h1>FormGet</h1>
+      <div class="form-content">
+        <h2>INFORMATION FORM</h2>
+        <p>This is my form. Please fill it out, it's awesome!</p>
+        <form novalidate>
+          <label for="email">
+            <input
+              type="email"
+              id="email"
+              required
+              placeholder="Your Email Here" />
+            <div class="error hidden"></div>
+          </label>
+          <label for="postcode">
+            <input
+              type="text"
+              id="postcode"
+              required
+              placeholder="Postcode"
+              pattern="([1-9]|[1-9][0-9]|[1-9][0-9][0-9]|[1-9][0-9][0-9][0-9])"
+              minlength="4"
+              maxlength="4" />
+            <div class="error hidden"></div>
+          </label>
+          <label for="country">
+            <input
+              type="text"
+              id="country"
+              required
+              placeholder="Country"
+              pattern="^[a-zA-Z]+$" />
+            <div class="error hidden"></div>
+          </label>
+          <label for="password">
+            <input
+              type="password"
+              id="password"
+              required
+              placeholder="Your Password"
+              pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" />
+            <div class="error hidden"></div>
+          </label>
+          <label for="password-confirmation">
+            <input
+              type="password"
+              id="password-confirmation"
+              required
+              placeholder="Confirm Password" />
+            <div class="error hidden"></div>
+          </label>
+          <button type="submit">Submit</button>
+          <div class="submit-error hidden"></div>
+        </form>
+      </div>
     </div>
-</body>
+  </body>
 </html>
